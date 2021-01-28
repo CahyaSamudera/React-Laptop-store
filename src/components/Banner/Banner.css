@@ -1,0 +1,24 @@
+.xbox {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../Images/laptop-2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 20px;
+}
+
+.xbox .content {
+  width: 40%;
+  padding: 50px 0 0 30px;
+  color: #fff;
+}
+
+.xbox p {
+  margin: 10px 0 20px;
+}
+.xbox .content a {
+  color: var(--primary-color);
+}

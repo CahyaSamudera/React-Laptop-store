@@ -1,0 +1,109 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../Images/laptop-6.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+}
+.text-box {
+  padding: 200px;
+  color: #fff;
+}
+.text-box h1 {
+  margin-bottom: 30px;
+  font-size: 60px;
+}
+.text-box p {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+.text-box button {
+  width: 220px;
+  padding: 12px 0;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.text-box button:hover {
+  transform: scale(1.1);
+}
+.sidebar {
+  height: 335px;
+  width: 60px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+}
+.icon-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px auto;
+}
+.side-text {
+  min-width: 0px;
+  height: 100%;
+  background: #f44336;
+  margin-right: 5px;
+  line-height: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px 0 0 5px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.icon {
+  min-width: 50px;
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.icon i {
+  font-size: 20px;
+  color: #f44336;
+  line-height: 50px;
+}
+.icon-box:hover .icon {
+  background: #f44336;
+}
+.icon-box:hover .icon i {
+  color: #fff;
+}
+.icon-box:hover .side-text {
+  min-width: 140px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    width: 100%;
+  }
+  .text-box {
+    padding: 70px 20px;
+  }
+  .sidebar {
+    top: 95%;
+    right: 5px;
+    transform: translateY(-95%);
+  }
+  .text-box h1 {
+    padding: 40px 0 10px;
+    margin-bottom: 0px;
+    font-size: 30px;
+  }
+}
